@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magic paradise</title>
+</head>
+    <body>
+ <div class="selection">
+ <link rel=stylesheet type= text/css  href=style.css >
+     
+           <select name="forma" onchange="location = this.value";>
+                 <option Value=""disabled selected>Select Series </option>
+                 <option value="Page1.html">one</option>
+                 <option value="Page2.html">two</option>
+               <option value="Page3.html">three</option>
+                 </select>
+        
+         </div>
+   
+
+    <meta charset="utf-8">
+ 
+<button onclick="setHalfVolume()" type="button"> volume 0.2</button>
+<button onclick="setFullVolume()" type="button">volume 1.0</button><br> 
+
+        <div>
+        
+<video id="myVideo" width="320" height="176" controls>
+  <source src="H3.mp4" type="video/mp4">
+  <source src="H3.mp4" type="video/ogg">
+  Your browser does not support HTML5 video.
+</video>
+        </div>
+
+<script>
+var vid = document.getElementById("myVideo");
+
+function getVolume() { 
+  alert(vid.volume);
+} 
+  
+function setHalfVolume() { 
+  vid.volume = 0.2;
+} 
+  
+function setFullVolume() { 
+  vid.volume = 1.0;
+} 
+        </script>
+    </body>
+</html>
